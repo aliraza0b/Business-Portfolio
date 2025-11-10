@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abdullah Ramzan | Professional Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Abdullah Ramzan</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+</header>
+
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <h2>Hello, I'm a Creative Developer</h2>
+    <p>Building modern, responsive, and elegant digital experiences.</p>
+    <button class="cta-btn" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">View Work</button>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-text">
+    <h3>About Me</h3>
+    <p>I’m a passionate and forward-thinking professional dedicated to creating meaningful digital experiences that bridge creativity and technology. With a strong focus on innovation, precision, and impact, I strive to design solutions that not only look exceptional but also perform flawlessly. Every project I take on is an opportunity to deliver measurable value — blending aesthetics, functionality, and user-centered strategy.<br><br>
+    Over the years, I’ve honed my ability to transform ideas into fully realized concepts that help businesses grow, connect, and inspire. My approach is guided by continuous learning and a deep understanding of emerging trends in design, technology, and market behavior.<br><br>
+    Beyond technical skill, I believe professionalism is built on empathy, clear communication, and reliability. My goal is to empower individuals and organizations to achieve their ambitions through creative digital solutions that leave a lasting impression.</p>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h3>My Projects</h3>
+  <div class="portfolio-grid">
+    <div class="portfolio-item"><img src="/pic1.avif" alt=""><h4>Project Alpha</h4></div>
+    <div class="portfolio-item"><img src="/pic2.avif" alt=""><h4>Project Beacon</h4></div>
+    <div class="portfolio-item"><img src="/pic3.avif" alt=""><h4>Project Canvas</h4></div>
+    <div class="portfolio-item"><img src="/pic7.avif" alt=""><h4>Project Delta</h4></div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <h3>What Clients Say</h3>
+  <div class="testimonial active"><p>"Amazing experience! Professional and efficient."</p><strong>- Alex</strong></div>
+  <div class="testimonial"><p>"Delivered beyond expectations, highly recommended!"</p><strong>- Taylor</strong></div>
+  <div class="testimonial"><p>"Creative, punctual, and easy to work with."</p><strong>- Jordan</strong></div>
+  <div class="testimonial-controls">
+    <button id="prev">‹</button>
+    <button id="next">›</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact Me</h3>
+  <form id="contactForm" novalidate>
+    <input type="text" id="name" placeholder="Your Name" required aria-label="Your name">
+    <input type="email" id="email" placeholder="Your Email" required aria-label="Your email">
+    <textarea id="message" rows="5" placeholder="Your Message" required aria-label="Your message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Abdullah Ramzan | All Rights Reserved</p>
+</footer>
+
+<script src="/script.js">
+</script>
+</body>
+</html>
